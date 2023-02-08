@@ -1,0 +1,19 @@
+{
+  "name": "creation-of-movie-application-consumption-of-api-the-moviedb",
+  "version": "1.0.0",
+  "description": "Creation of design and logic for the interaction in the application, in addition to calling and handling the data from the Api The MovieDB",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikejoya/Creation-of-movie-application-consumption-of-Api-The-MovieDB.git"
+  },
+  "author": "@Mikejoya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mikejoya/Creation-of-movie-application-consumption-of-Api-The-MovieDB/issues"
+  },
+  "homepage": "https://github.com/Mikejoya/Creation-of-movie-application-consumption-of-Api-The-MovieDB#readme"
+}

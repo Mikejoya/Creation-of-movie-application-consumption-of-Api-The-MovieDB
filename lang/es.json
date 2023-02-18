@@ -1,0 +1,15 @@
+{
+    "trendingPreview": {
+        "title": "Tendencias",
+        "btn": "Ver mas"
+    },
+    "categoriesPreview": {
+        "title": "Categorías"
+    },
+    "liked":{
+        "title": "Películas favoritas"
+    },
+    "relatedMovies-container": {
+        "title": "Películas similares"
+    }
+}

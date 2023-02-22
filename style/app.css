@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 :root {
@@ -27,7 +27,7 @@
     --font-weight-title1: 800;
     --font-weight-title2: 700;
     --font-weight-text1: 400;
-    --font-weight-text2: 500
+    --font-weight-text2: 500;
 }
 
 html {
@@ -42,14 +42,14 @@ body {
     font-weight: var(--font-weight-text1);
     font-size: 16px;
     margin: 4px 0 0;
-    padding: 0
+    padding: 0;
 }
 
 h1,
 h2,
 h3 {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 h1,
@@ -59,18 +59,18 @@ h2 {
     font-family: var(--font-family-titles);
     font-weight: var(--font-weight-title1);
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 h2 {
     font-size: 18px;
-    font-weight: var(--font-weight-title2)
+    font-weight: var(--font-weight-title2);
 }
 
 h3 {
     color: var(--blue-light-2);
     font-weight: var(--font-weight-text2);
-    font-size: 16px
+    font-size: 16px;
 }
 
 input {
@@ -78,12 +78,12 @@ input {
     color: var(--purple-medium-2);
     border: none;
     font-size: 18px;
-    padding-left: 16px
+    padding-left: 16px;
 }
 
 input::placeholder {
     color: var(--purple-medium-1);
-    font-family: var(--font-family-text)
+    font-family: var(--font-family-text);
 }
 
 button {
@@ -92,7 +92,7 @@ button {
     color: var(--purple-light-2);
     font-weight: var(--font-weight-text2);
     font-size: 14px;
-    cursor: pointer
+    cursor: pointer;
 }
 header{
     position: relative;
@@ -100,7 +100,7 @@ header{
 .header-container,
 .trendingPreview-header,
 .categoriesPreview-container, .liked-header {
-    padding: 0 24px
+    padding: 0 24px;
 }
 
 .trendingPreview-container,
@@ -111,12 +111,12 @@ header{
 
 .trendingPreview-header,
 .categoriesPreview-title, .liked-header {
-    margin-bottom: 24px
+    margin-bottom: 24px;
 }
 
 .movie-container {
     position: relative;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .movie-container--loading {
@@ -129,15 +129,15 @@ header{
     min-width: 150px;
     max-width: 150px;
     margin-bottom: 15px;
-    animation: loading-skeleton infinite 1.5s
+    animation: loading-skeleton infinite 1.5s;
 }
 
 .movie-container--loading:nth-child(2) {
-    animation-delay: .2s
+    animation-delay: .2s;
 }
 
 .movie-container--loading:nth-child(3) {
-    animation-delay: .4s
+    animation-delay: .4s;
 }
 
 .movie-img {
@@ -166,7 +166,7 @@ header{
 
 .movie-btn--liked{
     background-color: var(--purple-light-2);
-    box-shadow: 0 0 10px 2px var(--purple-dark-1)
+    box-shadow: 0 0 10px 2px var(--purple-dark-1);
 }
 
 .movie-btn--liked::before{
@@ -179,7 +179,7 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .category-container--loading {
@@ -192,15 +192,15 @@ header{
     min-width: 150px;
     max-width: 150px;
     margin-bottom: 15px;
-    animation: loading-skeleton infinite 1.5s
+    animation: loading-skeleton infinite 1.5s;
 }
 
 .category-container--loading:nth-child(2) {
-    animation-delay: .2s
+    animation-delay: .2s;
 }
 
 .header-container {
-    padding-top: 40px
+    padding-top: 40px;
 }
 
 .header-container--long {
@@ -210,11 +210,11 @@ header{
     height: 480px;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .header-container--categoryView {
-    background: linear-gradient(180deg, rgba(238, 204, 117, 0.5) 0%, rgba(238, 204, 117, 0) 72.92%)
+    background: linear-gradient(180deg, rgba(238, 204, 117, 0.5) 0%, rgba(238, 204, 117, 0) 72.92%);
 }
 
 .header-title {
@@ -244,11 +244,11 @@ header{
     font-size: 36px;
     margin-bottom: 16px;
     cursor: pointer;
-    display: inline-block
+    display: inline-block;
 }
 
 .header-arrow--white {
-    color: var(--purple-light-1)
+    color: var(--purple-light-1);
 }
 
 .header-searchForm {
@@ -271,26 +271,26 @@ header{
     height: 30px;
     width: 100%;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px
+    border-bottom-left-radius: 8px;
 }
 
 .header-searchForm button {
     width: 56px;
     height: 30px;
     border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px
+    border-bottom-right-radius: 8px;
 }
 
 .trendingPreview-header, .liked-header {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .trendingPreview-btn {
     border-radius: 8px;
     height: 32px;
-    width: 73px
+    width: 73px;
 }
 
 .trendingPreview-movieList, .liked-movieList {
@@ -317,11 +317,11 @@ header{
     max-height: 225px;
     width: 150px;
     min-width: 150px;
-    max-width: 150px
+    max-width: 150px;
 }
 
 .category-container {
-    width: 26%
+    width: 26%;
 }
 
 .category-title {
@@ -329,7 +329,7 @@ header{
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 .category-title::before {
@@ -339,83 +339,83 @@ header{
     border-radius: 8px;
     margin-right: 8px;
     width: 8px;
-    height: 8px
+    height: 8px;
 }
 
 #id28 {
-    --idColor: var(--yellow)
+    --idColor: var(--yellow);
 }
 
 #id12 {
-    --idColor: var(--red)
+    --idColor: var(--red);
 }
 
 #id16 {
-    --idColor: var(--green)
+    --idColor: var(--green);
 }
 
 #id35 {
-    --idColor: var(--lightBlue)
+    --idColor: var(--lightBlue);
 }
 
 #id80 {
-    --idColor: var(--darkBlue)
+    --idColor: var(--darkBlue);
 }
 
 #id99 {
-    --idColor: var(--purple-dark-1)
+    --idColor: var(--purple-dark-1);
 }
 
 #id18 {
-    --idColor: var(--purple-medium-1)
+    --idColor: var(--purple-medium-1);
 }
 
 #id10751 {
-    --idColor: var(--yellow)
+    --idColor: var(--yellow);
 }
 
 #id14 {
-    --idColor: var(--red)
+    --idColor: var(--red);
 }
 
 #id36 {
-    --idColor: var(--green)
+    --idColor: var(--green);
 }
 
 #id27 {
-    --idColor: var(--lightBlue)
+    --idColor: var(--lightBlue);
 }
 
 #id10402 {
-    --idColor: var(--darkBlue)
+    --idColor: var(--darkBlue);
 }
 
 #id9648 {
-    --idColor: var(--purple-dark-1)
+    --idColor: var(--purple-dark-1);
 }
 
 #id10749 {
-    --idColor: var(--purple-medium-1)
+    --idColor: var(--purple-medium-1);
 }
 
 #id878 {
-    --idColor: var(--yellow)
+    --idColor: var(--yellow);
 }
 
 #id10770 {
-    --idColor: var(--red)
+    --idColor: var(--red);
 }
 
 #id53 {
-    --idColor: var(--green)
+    --idColor: var(--green);
 }
 
 #id10752 {
-    --idColor: var(--lightBlue)
+    --idColor: var(--lightBlue);
 }
 
 #id37 {
-    --idColor: var(--darkBlue)
+    --idColor: var(--darkBlue);
 }
 
 .genericList-container {
@@ -423,16 +423,16 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 32px 24px
+    padding: 32px 24px;
 }
 
 .genericList-container .movie-container {
     display: inline-block;
-    width: 47.5%
+    width: 47.5%;
 }
 
 .genericList-container .movie-img {
-    width: 100%
+    width: 100%;
 }
 
 .movieDetail-container {
@@ -442,40 +442,40 @@ header{
     margin-top: 403px;
     z-index: 1;
     position: absolute;
-    background-color: var(--purple-light-1)
+    background-color: var(--purple-light-1);
 }
 
 .movieDetail-title {
     display: inline-block;
     width: 80%;
     margin: 0 0 16px;
-    padding: 0
+    padding: 0;
 }
 
 .movieDetail-score {
     display: inline-block;
     text-align: right;
     width: 18%;
-    font-weight: var(--font-weight-title2)
+    font-weight: var(--font-weight-title2);
 }
 
 .movieDetail-score::before {
     content: '★';
     color: var(--yellow);
-    padding-right: 4px
+    padding-right: 4px;
 }
 
 .movieDetail-description {
-    margin: 0 0 24px
+    margin: 0 0 24px;
 }
 
 .relatedMovies-container {
     margin-top: 24px;
-    height: 216px
+    height: 216px;
 }
 
 .relatedMovies-title {
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .relatedMovies-scrollContainer {
@@ -484,12 +484,12 @@ header{
     overflow-y: hidden;
     white-space: nowrap;
     width: calc(100vw - 24px);
-    padding-bottom: 16px
+    padding-bottom: 16px;
 }
 
 .relatedMovies-scrollContainer .movie-container {
     display: inline-block;
-    margin-right: 8px
+    margin-right: 8px;
 }
 
 .relatedMovies-scrollContainer .movie-container--loading {
@@ -498,7 +498,7 @@ header{
     max-width: 125px;
     height: 187.5px;
     min-height: 187.5px;
-    max-height: 187.5px
+    max-height: 187.5px;
 }
 
 .relatedMovies-scrollContainer .movie-img {
@@ -507,7 +507,7 @@ header{
     max-width: 125px;
     height: 187.5px;
     min-height: 187.5px;
-    max-height: 187.5px
+    max-height: 187.5px;
 }
 
 footer {
@@ -526,7 +526,7 @@ footer {
 }
 
 .inactive {
-    display: none
+    display: none;
 }
 
 @keyframes loading-skeleton{

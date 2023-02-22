@@ -299,12 +299,10 @@ function getLikedMovies(){
     createMovies(movieListArray, likedMoviesListArticle, {lazyLoad: true, clean: true})
 }
 
-
 const flatsLang = document.querySelector('#lang-flats');
 
-const textsToChange = document.querySelectorAll('[data-section]');
-
 async function changeLang(langs){
+    const textsToChange = document.querySelectorAll('[data-section]');
     const response = await fetch(`./lang/${langs}.json`);
     const data = await response.json();
 

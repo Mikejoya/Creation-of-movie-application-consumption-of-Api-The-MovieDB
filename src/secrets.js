@@ -1,0 +1,1 @@
+const API_KEY__THEMOVIES = 'e80f1163ef4fd82add0952856ac16a33';

@@ -3,6 +3,12 @@
 }
 
 :root {
+    --black-main-1: #0D0D0D;
+    --blue-light-1: #CEDAF2;
+    --blue-light-2: #7E9CD9;
+    --blue-light-3: #668CD9;
+    --blue-dark-1: #2651A6;
+    /*colores que posiblemete deba borrar*/
     --purple-light-1: #FBFAFB;
     --purple-light-2: #EEEAF2;
     --purple-medium-1: #AA83C8;
@@ -25,11 +31,12 @@
 }
 
 html {
-    background-color: var(--purple-medium-3)
+    box-sizing: border-box;
+    background-color: var(--blue-light-3);
 }
 
 body {
-    background-color: var(--purple-light-1);
+    background-color: var(--black-main-1);
     color: var(--purple-dark-2);
     font-family: var(--font-family-text);
     font-weight: var(--font-weight-text1);
@@ -48,7 +55,7 @@ h3 {
 h1,
 h2 {
     font-size: 24px;
-    color: var(--purple-dark-2);
+    color: var(--blue-light-1);
     font-family: var(--font-family-titles);
     font-weight: var(--font-weight-title1);
     margin: 0;
@@ -57,12 +64,11 @@ h2 {
 
 h2 {
     font-size: 18px;
-    color: var(--purple-dark-1);
     font-weight: var(--font-weight-title2)
 }
 
 h3 {
-    color: var(--purple-dark-2);
+    color: var(--blue-light-2);
     font-weight: var(--font-weight-text2);
     font-size: 16px
 }
@@ -81,14 +87,16 @@ input::placeholder {
 }
 
 button {
-    background-color: var(--purple-dark-1);
+    background-color: var(--blue-dark-1);
     border: none;
     color: var(--purple-light-2);
     font-weight: var(--font-weight-text2);
     font-size: 14px;
     cursor: pointer
 }
-
+header{
+    position: relative;
+}
 .header-container,
 .trendingPreview-header,
 .categoriesPreview-container, .liked-header {
@@ -97,7 +105,8 @@ button {
 
 .trendingPreview-container,
 .categoriesPreview-container, .liked-container, footer {
-    margin-top: 48px
+    width: 90%;
+    margin: 50px auto 0;
 }
 
 .trendingPreview-header,
@@ -209,7 +218,25 @@ button {
 }
 
 .header-title {
-    margin-bottom: 16px
+    width: 150px;
+    position: relative;
+    left: 40%;
+    margin-bottom: 16px;
+    color: var(--blue-light-1);
+}
+.language-selector{
+    position: absolute;
+    top: 8px;
+    right: 23px;
+}
+
+.language-selector select{
+    background-color: var(--blue-dark-1);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .header-arrow {
@@ -228,12 +255,20 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    flex-wrap: nowrap
+    width: 80%;
+    flex-wrap: nowrap;
+    margin: 48px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px -1px var(--blue-light-1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
 }
 
 .header-searchForm input {
-    height: 48px;
+    height: 30px;
     width: 100%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px
@@ -241,7 +276,7 @@ button {
 
 .header-searchForm button {
     width: 56px;
-    height: 48px;
+    height: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px
 }
@@ -255,7 +290,7 @@ button {
 .trendingPreview-btn {
     border-radius: 8px;
     height: 32px;
-    width: 72px
+    width: 73px
 }
 
 .trendingPreview-movieList, .liked-movieList {
@@ -263,13 +298,17 @@ button {
     overflow-y: hidden;
     white-space: nowrap;
     height: 241px;
-    padding-left: 24px;
-    padding-bottom: 16px
+    border-radius: 16px;
+    box-shadow: 0px 2px 23px -6px var(--blue-light-1);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 .trendingPreview-movieList .movie-container, .liked-movieList .movie-container {
     display: inline-block;
-    margin-right: 8px
+    margin: 8px;
 }
 
 .trendingPreview-movieList .movie-container .movie-img, .liked-movieList .movie-container .movie-img {
@@ -282,7 +321,7 @@ button {
 }
 
 .category-container {
-    width: 45%
+    width: 26%
 }
 
 .category-title {
@@ -472,13 +511,18 @@ button {
 }
 
 footer {
-    background-color: var(--purple-medium-3);
-    color: var(--purple-light-2);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     text-align: center;
-    height: 48px;
+    height: 30px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items:center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .inactive {

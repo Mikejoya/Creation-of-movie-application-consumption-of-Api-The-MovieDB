@@ -10,7 +10,7 @@
 <body>
     <header id="header" class="header-container">
         <span class="header-arrow inactive">&lt;</span>
-        <h1 class="header-title">PlatziMovies</h1>
+        <h1 class="header-title">MikeMovies</h1>
         <div class="language-selector">
             <select id="lang-flats" class="language-select">
                 <option data-lang="es">
@@ -22,10 +22,6 @@
             </select>
         </div>
         <h1 class="header-title header-title--categoryView inactive">Acción</h1>
-        <form id="searchForm" class="header-searchForm">
-            <input type="text" placeholder="Vengadores" />
-            <button id="searchBtn">🔍</button>
-        </form>
     </header>
     <section id="trendingPreview" class="trendingPreview-container">
         <div class="trendingPreview-header">
@@ -38,6 +34,10 @@
             <div class="movie-container movie-container--loading"></div>
         </article>
     </section>
+    <form id="searchForm" class="header-searchForm">
+        <input type="text" placeholder="search" />
+        <button id="searchBtn">🔍</button>
+    </form>
     <section id="categoriesPreview" class="categoriesPreview-container">
         <h2 class="categoriesPreview-title" data-section="categoriesPreview" data-value="title">Categorías</h2>
         <article class="categoriesPreview-list">

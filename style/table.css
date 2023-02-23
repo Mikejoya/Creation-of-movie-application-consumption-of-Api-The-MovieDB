@@ -7,3 +7,9 @@
     width: 700px;
     margin: 0 auto;
 }
+.movieDetail-container{
+    width: 700px;
+}
+.relatedMovies-scrollContainer{
+    width: 660px;
+}

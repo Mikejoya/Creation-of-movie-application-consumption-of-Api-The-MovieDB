@@ -453,7 +453,6 @@ button {
 }
 
 .movieDetail-container {
-    width: 700px;
     margin: 0 auto;
     padding: 32px 24px;
     border-radius: 16px;
@@ -501,7 +500,7 @@ button {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 660px;
+    width: 90%;
     border-radius: 8px;
     box-shadow: 2px 2px 7px -1px;
     -webkit-border-radius: 8px;

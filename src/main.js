@@ -274,15 +274,17 @@ async function getMovieById(id) {
     console.log({movie});
 
     const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
-    headerSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(${movieImgUrl})`;
+    headerSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(${movieImgUrl}) no-repeat center/cover`;
     console.log(movieImgUrl);
 
+    headerCategoryTitle.textContent = movie.genres[0].name;
     movieDetailTitle.textContent = movie.title;
     movieDetailDescription.textContent = movie.overview;
     movieDetailScore.textContent = movie.vote_average;
 
     createCategories(movie.genres, movieDetailCategoriesList);
     getRelatedMoviesId(id)
+    console.log(movie.genres[0].name);
 }
 
 async function getRelatedMoviesId(id){

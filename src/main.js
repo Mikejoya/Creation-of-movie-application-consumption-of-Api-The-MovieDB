@@ -1,4 +1,3 @@
-console.log('Hola hermoso mundo');
 const api = axios.create({
     baseURL: 'https://api.themoviedb.org/3',
     headers: {
@@ -25,10 +24,8 @@ function likeMovie(movie){
     
     const likedMovies = likedMoviesList();
     if(likedMovies[movie.id]){
-        console.log('ya esta en ls');
         likedMovies[movie.id] = undefined;
     }else{
-        console.log('no esta en ls');
         likedMovies[movie.id] = movie;
     }
     localStorage.setItem('liked_movies',JSON.stringify(likedMovies));
@@ -128,7 +125,6 @@ async function getTrendingMoviesPreview() {
     const { data } = await api('/trending/movie/day');
     const movies = data.results;
 
-    console.log({data, movies});
 
     createMovies(movies, trendingMoviesPreviewList, {lazyLoad: true});
 
@@ -151,7 +147,6 @@ async function getMoviesByCategory(id) {
     
     const movies = data.results;
     maxPage = data.total_pages;
-    console.log({data, movies});
 
     createMovies(movies, genericSection, {lazyLoad: true});
 }
@@ -234,7 +229,6 @@ async function getTrendingMovies() {
     const movies = data.results;
     maxPage = data.total_pages;
     
-    console.log({data, movies});
 
     createMovies(movies, genericSection,{lazyLoad: true, clean: true});
 }
@@ -271,11 +265,8 @@ async function getPaginatedTrendingMovies(){
 async function getMovieById(id) {
     const { data: movie } = await api('movie/' + id);
     
-    console.log({movie});
-
     const movieImgUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
     headerSection.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%), url(${movieImgUrl}) no-repeat center/cover`;
-    console.log(movieImgUrl);
 
     headerCategoryTitle.textContent = movie.genres[0].name;
     movieDetailTitle.textContent = movie.title;
@@ -284,7 +275,6 @@ async function getMovieById(id) {
 
     createCategories(movie.genres, movieDetailCategoriesList);
     getRelatedMoviesId(id)
-    console.log(movie.genres[0].name);
 }
 
 async function getRelatedMoviesId(id){
@@ -313,7 +303,6 @@ async function changeLang(langs){
         const value = textToChange.dataset.value;
 
         textToChange.innerText = data[section][value];
-        console.log(textToChange);
     }
 }
 
